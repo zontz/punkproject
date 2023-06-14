@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95706F7B2A3A5740007FC87E /* SnapKit */; };
 		95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508C2A3A503D001CE8EA /* AppDelegate.swift */; };
 		95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */; };
 		95E750912A3A503D001CE8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E750902A3A503D001CE8EA /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +60,48 @@
 		95E7508B2A3A503D001CE8EA /* punkproject */ = {
 			isa = PBXGroup;
 			children = (
-				95E7508C2A3A503D001CE8EA /* AppDelegate.swift */,
-				95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */,
-				95E750902A3A503D001CE8EA /* ViewController.swift */,
-				95E750922A3A503D001CE8EA /* Main.storyboard */,
-				95E750982A3A503E001CE8EA /* Assets.xcassets */,
-				95E7509A2A3A503E001CE8EA /* LaunchScreen.storyboard */,
-				95E7509D2A3A503E001CE8EA /* Info.plist */,
+				95E750A42A3A5193001CE8EA /* Application Layer */,
+				95E750A52A3A51AE001CE8EA /* Core Layer */,
+				95E750A62A3A51B7001CE8EA /* Presentation Layer */,
+				95E750A32A3A517A001CE8EA /* Resources */,
 				95E750952A3A503D001CE8EA /* punkproject.xcdatamodeld */,
 			);
 			path = punkproject;
+			sourceTree = "<group>";
+		};
+		95E750A32A3A517A001CE8EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95E750982A3A503E001CE8EA /* Assets.xcassets */,
+				95E750922A3A503D001CE8EA /* Main.storyboard */,
+				95E7509A2A3A503E001CE8EA /* LaunchScreen.storyboard */,
+				95E7509D2A3A503E001CE8EA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95E750A42A3A5193001CE8EA /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				95E7508C2A3A503D001CE8EA /* AppDelegate.swift */,
+				95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		95E750A52A3A51AE001CE8EA /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		95E750A62A3A51B7001CE8EA /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				95E750902A3A503D001CE8EA /* ViewController.swift */,
+			);
+			path = "Presentation Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +120,9 @@
 			dependencies = (
 			);
 			name = punkproject;
+			packageProductDependencies = (
+				95706F7B2A3A5740007FC87E /* SnapKit */,
+			);
 			productName = punkproject;
 			productReference = 95E750892A3A503D001CE8EA /* punkproject.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 95E750802A3A503D001CE8EA;
+			packageReferences = (
+				95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 95E7508A2A3A503D001CE8EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -293,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 727WSJDZ7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = punkproject/Info.plist;
+				INFOPLIST_FILE = punkproject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 727WSJDZ7D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = punkproject/Info.plist;
+				INFOPLIST_FILE = punkproject/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -362,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95706F7B2A3A5740007FC87E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		95E750952A3A503D001CE8EA /* punkproject.xcdatamodeld */ = {

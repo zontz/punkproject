@@ -55,6 +55,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 private extension SceneDelegate {
     func configureWindow(_ scene: UIWindowScene) {
-
+        window?.windowScene = scene
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
     }
 }

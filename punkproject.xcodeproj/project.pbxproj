@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95706F7B2A3A5740007FC87E /* SnapKit */; };
+		95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F7E2A3A5BAD007FC87E /* Beer.swift */; };
+		95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F802A3A5BE6007FC87E /* BoilVolume.swift */; };
+		95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F822A3A5C54007FC87E /* Fermentation.swift */; };
+		95706F852A3A5C6B007FC87E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F842A3A5C6B007FC87E /* Method.swift */; };
+		95706F872A3A5C7E007FC87E /* MashTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F862A3A5C7E007FC87E /* MashTemp.swift */; };
+		95706F892A3A5C93007FC87E /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F882A3A5C93007FC87E /* Malt.swift */; };
+		95706F8B2A3A5D14007FC87E /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F8A2A3A5D13007FC87E /* Hop.swift */; };
+		95706F8D2A3A5D80007FC87E /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F8C2A3A5D80007FC87E /* Ingredients.swift */; };
 		95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508C2A3A503D001CE8EA /* AppDelegate.swift */; };
 		95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */; };
 		95E750912A3A503D001CE8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E750902A3A503D001CE8EA /* ViewController.swift */; };
@@ -18,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95706F7E2A3A5BAD007FC87E /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		95706F802A3A5BE6007FC87E /* BoilVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolume.swift; sourceTree = "<group>"; };
+		95706F822A3A5C54007FC87E /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
+		95706F842A3A5C6B007FC87E /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		95706F862A3A5C7E007FC87E /* MashTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashTemp.swift; sourceTree = "<group>"; };
+		95706F882A3A5C93007FC87E /* Malt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		95706F8A2A3A5D13007FC87E /* Hop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		95706F8C2A3A5D80007FC87E /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		95E750892A3A503D001CE8EA /* punkproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punkproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7508C2A3A503D001CE8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95706F7D2A3A5B9D007FC87E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95706F7E2A3A5BAD007FC87E /* Beer.swift */,
+				95706F802A3A5BE6007FC87E /* BoilVolume.swift */,
+				95706F822A3A5C54007FC87E /* Fermentation.swift */,
+				95706F842A3A5C6B007FC87E /* Method.swift */,
+				95706F862A3A5C7E007FC87E /* MashTemp.swift */,
+				95706F882A3A5C93007FC87E /* Malt.swift */,
+				95706F8A2A3A5D13007FC87E /* Hop.swift */,
+				95706F8C2A3A5D80007FC87E /* Ingredients.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		95E750802A3A503D001CE8EA = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +91,7 @@
 		95E7508B2A3A503D001CE8EA /* punkproject */ = {
 			isa = PBXGroup;
 			children = (
+				95706F7D2A3A5B9D007FC87E /* Models */,
 				95E750A42A3A5193001CE8EA /* Application Layer */,
 				95E750A52A3A51AE001CE8EA /* Core Layer */,
 				95E750A62A3A51B7001CE8EA /* Presentation Layer */,
@@ -183,8 +215,16 @@
 			files = (
 				95E750912A3A503D001CE8EA /* ViewController.swift in Sources */,
 				95E750972A3A503D001CE8EA /* punkproject.xcdatamodeld in Sources */,
+				95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */,
+				95706F8D2A3A5D80007FC87E /* Ingredients.swift in Sources */,
+				95706F872A3A5C7E007FC87E /* MashTemp.swift in Sources */,
 				95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */,
+				95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */,
+				95706F852A3A5C6B007FC87E /* Method.swift in Sources */,
 				95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */,
+				95706F892A3A5C93007FC87E /* Malt.swift in Sources */,
+				95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */,
+				95706F8B2A3A5D14007FC87E /* Hop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

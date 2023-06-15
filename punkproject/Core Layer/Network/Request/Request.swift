@@ -37,7 +37,7 @@ extension Request {
         var components = URLComponents()
         components.scheme = "https"
         components.host = baseURL
-        components.path = path
+        components.path = apiVersion + path
 
         if !urlParams.isEmpty {
             components.queryItems = urlParams.map { URLQueryItem(name: $0, value: $1) }

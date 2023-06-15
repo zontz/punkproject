@@ -12,7 +12,7 @@ protocol BeerService: AnyObject {
     func getAllBeers() -> AnyPublisher<[Beer], NetworkError>
 }
 
-class BeerServiceImpl: BeerService {
+final class BeerServiceImpl: BeerService {
     private let networkManager: NetworkManager
 
     init(networkManager: NetworkManager) {

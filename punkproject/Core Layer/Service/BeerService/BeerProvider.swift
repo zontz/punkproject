@@ -45,11 +45,11 @@ extension BeerProvider: Request {
     var path: String {
         switch self {
         case .getAllBeers:
-            return apiVersion + Routes.allBeers
+            return Routes.allBeers
         case .getSingleBeer:
-            return apiVersion + Routes.singleBeer
+            return Routes.singleBeer
         case .getRandomBeer:
-            return apiVersion + Routes.allBeers
+            return Routes.allBeers
         }
     }
 

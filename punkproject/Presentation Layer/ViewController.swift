@@ -6,51 +6,33 @@
 //
 
 import UIKit
+import Combine
 
-class ViewController: UIViewController {
-    let datS: [Beer] = []
+final class ViewController: UIViewController {
+    private var beers: [Beer] = []
+    private var cancellables = Set<AnyCancellable>()
+    private let beerService = BeerServiceImpl(networkManager: NetworkManagerImpl())
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
         getData()
-
     }
-    func getData()  {
-        
-        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://api.punkapi.com/v2/beers")!)) { data, response, error in
-            guard let data = data else {
-                return
-            }
-            var result: [Beer]
-            do {
-                result = try JSONDecoder().decode([Beer].self, from: data)
-
-            } catch {
-                print("Дарова заебал")
-            }
-        }
-        .resume()
-    }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+private extension ViewController {
+    func getData()  {
+        beerService.getAllBeers()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    print(error)
+                case .finished:
+                    break
+                }
+            } receiveValue: { beers in
+                self.beers = beers
+            }.store(in: &cancellables)
+    }
+}

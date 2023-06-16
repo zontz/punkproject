@@ -29,7 +29,7 @@ private extension ViewController {
                 case .failure(let error):
                     print(error)
                 case .finished:
-                    print("finished api call")
+                    break
                 }
             } receiveValue: { beers in
                 self.beers = beers

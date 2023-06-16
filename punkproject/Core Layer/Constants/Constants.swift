@@ -9,11 +9,17 @@ import Foundation
 
 enum Routes {
 
-    static let baseURL: String = "api.punkapi.com"
+    static let baseURL: String = {
+        let selectServerService = SelectServerServiceImpl()
+        return selectServerService.getServerHost()
+    }()
 
-    //Routes
     static let allBeers = "/beers"
     static let randomBeer = "/beers/random"
     static let singleBeer = "/beers/1"
+}
 
+enum HostDomains: String, CaseIterable {
+    case prod = "test"
+    case dev = "api.punkapi.com"
 }

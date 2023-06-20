@@ -37,7 +37,6 @@
 		95706FA72A3B356B007FC87E /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA62A3B356B007FC87E /* BeerService.swift */; };
 		95706FBA2A3BCFB1007FC87E /* SelectServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FB92A3BCFB1007FC87E /* SelectServerService.swift */; };
 		95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508C2A3A503D001CE8EA /* AppDelegate.swift */; };
-		95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */; };
 		95E750912A3A503D001CE8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E750902A3A503D001CE8EA /* ViewController.swift */; };
 		95E750942A3A503D001CE8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E750922A3A503D001CE8EA /* Main.storyboard */; };
 		95E750972A3A503D001CE8EA /* punkproject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95E750952A3A503D001CE8EA /* punkproject.xcdatamodeld */; };
@@ -73,7 +72,6 @@
 		95706FB92A3BCFB1007FC87E /* SelectServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerService.swift; sourceTree = "<group>"; };
 		95E750892A3A503D001CE8EA /* punkproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punkproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7508C2A3A503D001CE8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95E750902A3A503D001CE8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		95E750932A3A503D001CE8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95E750962A3A503D001CE8EA /* punkproject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = punkproject.xcdatamodel; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 			isa = PBXGroup;
 			children = (
 				95E7508C2A3A503D001CE8EA /* AppDelegate.swift */,
-				95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */,
 				95573D0B2A41F66500DFB244 /* ApplicationAssembly */,
 				95573D0A2A41F62500DFB244 /* Builder */,
 			);
@@ -403,7 +400,6 @@
 				95706FA72A3B356B007FC87E /* BeerService.swift in Sources */,
 				95706F922A3A7327007FC87E /* Constants.swift in Sources */,
 				95706F992A3A7911007FC87E /* BodyDecoder.swift in Sources */,
-				95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */,
 				95706F892A3A5C93007FC87E /* Malt.swift in Sources */,
 				95706F942A3A773D007FC87E /* Request.swift in Sources */,
 				95573D042A41E29500DFB244 /* DDLogFlag+emoji.swift in Sources */,

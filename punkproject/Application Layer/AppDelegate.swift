@@ -6,16 +6,18 @@
 //
 
 import UIKit
-import CoreData
 import SnapKit
 import CocoaLumberjack
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
     private let builder = BuilderImpl([CocoaLumberjackBuilder()])
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupBuilder()
+        setupWindow()
         log("Application didFinishLaunchingWithOptions")
         return true
     }
@@ -42,6 +44,12 @@ private extension AppDelegate {
         } catch {
             print(error.localizedDescription)
         }
+    }
+
+    func setupWindow() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
     }
 }
 

@@ -15,9 +15,13 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        log("\(#function) is valid ")
         view.backgroundColor = .yellow
         getData()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        log("open main screen")
     }
 }
 
@@ -32,8 +36,8 @@ private extension ViewController {
                 case .finished:
                     break
                 }
-            } receiveValue: { beers in
-                self.beers = beers
+            } receiveValue: { [weak self] beers in
+                self?.beers = beers
             }.store(in: &cancellables)
     }
 }

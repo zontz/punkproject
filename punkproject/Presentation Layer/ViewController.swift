@@ -15,6 +15,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        log("\(#function) is valid ")
         view.backgroundColor = .yellow
         getData()
     }
@@ -34,5 +35,11 @@ private extension ViewController {
             } receiveValue: { beers in
                 self.beers = beers
             }.store(in: &cancellables)
+    }
+}
+
+extension ViewController: LogCompatible {
+    var logger: Logger {
+        Logger(prefix: "[ViewController]")
     }
 }

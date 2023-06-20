@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95573CFB2A41D81500DFB244 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFA2A41D81500DFB244 /* CocoaLumberjack */; };
+		95573CFD2A41D81500DFB244 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFC2A41D81500DFB244 /* CocoaLumberjackSwift */; };
+		95573CFF2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFE2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend */; };
+		95573D022A41DA7900DFB244 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D012A41DA7900DFB244 /* Logger.swift */; };
+		95573D042A41E29500DFB244 /* DDLogFlag+emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D032A41E29500DFB244 /* DDLogFlag+emoji.swift */; };
+		95573D072A41E37100DFB244 /* LogStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D062A41E37100DFB244 /* LogStringConvertible.swift */; };
+		95573D092A41E3D900DFB244 /* LogCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D082A41E3D900DFB244 /* LogCompatible.swift */; };
+		95573D0D2A41F90100DFB244 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D0C2A41F90100DFB244 /* Builder.swift */; };
+		95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D0E2A41F96700DFB244 /* BuilderImpl.swift */; };
+		95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */; };
 		95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95706F7B2A3A5740007FC87E /* SnapKit */; };
 		95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F7E2A3A5BAD007FC87E /* Beer.swift */; };
 		95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F802A3A5BE6007FC87E /* BoilVolume.swift */; };
@@ -36,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95573D012A41DA7900DFB244 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		95573D032A41E29500DFB244 /* DDLogFlag+emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DDLogFlag+emoji.swift"; sourceTree = "<group>"; };
+		95573D062A41E37100DFB244 /* LogStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStringConvertible.swift; sourceTree = "<group>"; };
+		95573D082A41E3D900DFB244 /* LogCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCompatible.swift; sourceTree = "<group>"; };
+		95573D0C2A41F90100DFB244 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		95573D0E2A41F96700DFB244 /* BuilderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderImpl.swift; sourceTree = "<group>"; };
+		95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaLumberjackBuilder.swift; sourceTree = "<group>"; };
 		95706F7E2A3A5BAD007FC87E /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		95706F802A3A5BE6007FC87E /* BoilVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolume.swift; sourceTree = "<group>"; };
 		95706F822A3A5C54007FC87E /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
@@ -70,13 +87,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95573CFB2A41D81500DFB244 /* CocoaLumberjack in Frameworks */,
 				95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */,
+				95573CFF2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
+				95573CFD2A41D81500DFB244 /* CocoaLumberjackSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95573D002A41DA5C00DFB244 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				95573D012A41DA7900DFB244 /* Logger.swift */,
+				95573D052A41E29900DFB244 /* Extensions */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		95573D052A41E29900DFB244 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95573D032A41E29500DFB244 /* DDLogFlag+emoji.swift */,
+				95573D062A41E37100DFB244 /* LogStringConvertible.swift */,
+				95573D082A41E3D900DFB244 /* LogCompatible.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95573D0A2A41F62500DFB244 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				95573D0C2A41F90100DFB244 /* Builder.swift */,
+				95573D0E2A41F96700DFB244 /* BuilderImpl.swift */,
+				95573D102A41F9B500DFB244 /* CocoaLumberjackBuilder */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		95573D0B2A41F66500DFB244 /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		95573D102A41F9B500DFB244 /* CocoaLumberjackBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */,
+			);
+			path = CocoaLumberjackBuilder;
+			sourceTree = "<group>";
+		};
 		95706F7D2A3A5B9D007FC87E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +280,8 @@
 			children = (
 				95E7508C2A3A503D001CE8EA /* AppDelegate.swift */,
 				95E7508E2A3A503D001CE8EA /* SceneDelegate.swift */,
+				95573D0B2A41F66500DFB244 /* ApplicationAssembly */,
+				95573D0A2A41F62500DFB244 /* Builder */,
 			);
 			path = "Application Layer";
 			sourceTree = "<group>";
@@ -223,6 +289,7 @@
 		95E750A52A3A51AE001CE8EA /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				95573D002A41DA5C00DFB244 /* Logger */,
 				95706F902A3A7318007FC87E /* Constants */,
 				95706FA22A3B353F007FC87E /* Service */,
 				95706F8E2A3A7197007FC87E /* Network */,
@@ -256,6 +323,9 @@
 			name = punkproject;
 			packageProductDependencies = (
 				95706F7B2A3A5740007FC87E /* SnapKit */,
+				95573CFA2A41D81500DFB244 /* CocoaLumberjack */,
+				95573CFC2A41D81500DFB244 /* CocoaLumberjackSwift */,
+				95573CFE2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend */,
 			);
 			productName = punkproject;
 			productReference = 95E750892A3A503D001CE8EA /* punkproject.app */;
@@ -287,6 +357,7 @@
 			mainGroup = 95E750802A3A503D001CE8EA;
 			packageReferences = (
 				95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 			);
 			productRefGroup = 95E7508A2A3A503D001CE8EA /* Products */;
 			projectDirPath = "";
@@ -316,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95706FA12A3B2BC3007FC87E /* NetworkManager.swift in Sources */,
+				95573D072A41E37100DFB244 /* LogStringConvertible.swift in Sources */,
 				95E750912A3A503D001CE8EA /* ViewController.swift in Sources */,
 				95E750972A3A503D001CE8EA /* punkproject.xcdatamodeld in Sources */,
 				95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */,
@@ -324,6 +396,7 @@
 				95706F8D2A3A5D80007FC87E /* Ingredients.swift in Sources */,
 				95706F872A3A5C7E007FC87E /* MashTemp.swift in Sources */,
 				95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */,
+				95573D022A41DA7900DFB244 /* Logger.swift in Sources */,
 				95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */,
 				95706F852A3A5C6B007FC87E /* Method.swift in Sources */,
 				95706F962A3A7797007FC87E /* HTTPMethod.swift in Sources */,
@@ -333,8 +406,13 @@
 				95E7508F2A3A503D001CE8EA /* SceneDelegate.swift in Sources */,
 				95706F892A3A5C93007FC87E /* Malt.swift in Sources */,
 				95706F942A3A773D007FC87E /* Request.swift in Sources */,
+				95573D042A41E29500DFB244 /* DDLogFlag+emoji.swift in Sources */,
 				95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */,
 				95706F9E2A3B23C6007FC87E /* NetworkError.swift in Sources */,
+				95573D0D2A41F90100DFB244 /* Builder.swift in Sources */,
+				95573D092A41E3D900DFB244 /* LogCompatible.swift in Sources */,
+				95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */,
+				95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */,
 				95706FA42A3B354F007FC87E /* BeerProvider.swift in Sources */,
 				95706F8B2A3A5D14007FC87E /* Hop.swift in Sources */,
 			);
@@ -1081,6 +1159,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1092,6 +1178,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		95573CFA2A41D81500DFB244 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		95573CFC2A41D81500DFB244 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		95573CFE2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwiftLogBackend;
+		};
 		95706F7B2A3A5740007FC87E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */;

@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 protocol NetworkManager: AnyObject {
-    func publisher<T>(_ request: URLRequest, decodingType: T.Type, decoder: BodyDecoder) -> AnyPublisher<T, NetworkError> where T: Decodable
+    func publisher<T>(_ request: URLRequest, decodingType: T.Type) -> AnyPublisher<T, NetworkError> where T: Decodable
 }
 
 final class NetworkManagerImpl: NetworkManager {
@@ -13,7 +13,7 @@ final class NetworkManagerImpl: NetworkManager {
       self.urlSession = urlSession
     }
 
-    func publisher<T>(_ request: URLRequest, decodingType: T.Type, decoder: BodyDecoder) -> AnyPublisher<T, NetworkError> where T: Decodable {
+    func publisher<T>(_ request: URLRequest, decodingType: T.Type) -> AnyPublisher<T, NetworkError> where T: Decodable {
         return urlSession.dataTaskPublisher(for: request)
             .tryMap({ result in
                 guard let httpResponse = result.response as? HTTPURLResponse else {
@@ -26,7 +26,7 @@ final class NetworkManagerImpl: NetworkManager {
                     throw NetworkError.emptyErrorWithStatusCode(httpResponse.statusCode.description)
                 }
             })
-            .decode(type: T.self, decoder: decoder.decoder())
+            .decode(type: T.self, decoder: JSONDecoder())
             .mapError({ error -> NetworkError in
                 if let error = error as? NetworkError {
                     return error

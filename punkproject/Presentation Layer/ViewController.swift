@@ -38,6 +38,7 @@ private extension ViewController {
                 }
             } receiveValue: { [weak self] beers in
                 self?.beers = beers
+                self?.log(.info,"\(#function) is succesfull")
             }.store(in: &cancellables)
     }
 }

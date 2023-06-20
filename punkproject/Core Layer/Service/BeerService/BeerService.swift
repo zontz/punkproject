@@ -21,6 +21,6 @@ final class BeerServiceImpl: BeerService {
 
     func getAllBeers() -> AnyPublisher<[Beer], NetworkError> {
         let request = getSingleBeerRequest().createURLRequest()
-        return networkManager.publisher(request, decodingType: [Beer].self, decoder: BodyJSONDecoder())
+        return networkManager.publisher(request, decodingType: [Beer].self)
     }
 }

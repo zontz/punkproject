@@ -17,6 +17,7 @@
 		95573D0D2A41F90100DFB244 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D0C2A41F90100DFB244 /* Builder.swift */; };
 		95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D0E2A41F96700DFB244 /* BuilderImpl.swift */; };
 		95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */; };
+		95573D142A4214F500DFB244 /* getSingleBeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D132A4214F500DFB244 /* getSingleBeerRequest.swift */; };
 		95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95706F7B2A3A5740007FC87E /* SnapKit */; };
 		95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F7E2A3A5BAD007FC87E /* Beer.swift */; };
 		95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F802A3A5BE6007FC87E /* BoilVolume.swift */; };
@@ -33,7 +34,6 @@
 		95706F9B2A3A7938007FC87E /* BodyJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F9A2A3A7938007FC87E /* BodyJSONDecoder.swift */; };
 		95706F9E2A3B23C6007FC87E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F9D2A3B23C6007FC87E /* NetworkError.swift */; };
 		95706FA12A3B2BC3007FC87E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA02A3B2BC3007FC87E /* NetworkManager.swift */; };
-		95706FA42A3B354F007FC87E /* BeerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA32A3B354F007FC87E /* BeerProvider.swift */; };
 		95706FA72A3B356B007FC87E /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA62A3B356B007FC87E /* BeerService.swift */; };
 		95706FBA2A3BCFB1007FC87E /* SelectServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FB92A3BCFB1007FC87E /* SelectServerService.swift */; };
 		95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508C2A3A503D001CE8EA /* AppDelegate.swift */; };
@@ -52,6 +52,7 @@
 		95573D0C2A41F90100DFB244 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		95573D0E2A41F96700DFB244 /* BuilderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderImpl.swift; sourceTree = "<group>"; };
 		95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaLumberjackBuilder.swift; sourceTree = "<group>"; };
+		95573D132A4214F500DFB244 /* getSingleBeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getSingleBeerRequest.swift; sourceTree = "<group>"; };
 		95706F7E2A3A5BAD007FC87E /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		95706F802A3A5BE6007FC87E /* BoilVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolume.swift; sourceTree = "<group>"; };
 		95706F822A3A5C54007FC87E /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		95706F9A2A3A7938007FC87E /* BodyJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyJSONDecoder.swift; sourceTree = "<group>"; };
 		95706F9D2A3B23C6007FC87E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		95706FA02A3B2BC3007FC87E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		95706FA32A3B354F007FC87E /* BeerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerProvider.swift; sourceTree = "<group>"; };
 		95706FA62A3B356B007FC87E /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
 		95706FB92A3BCFB1007FC87E /* SelectServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerService.swift; sourceTree = "<group>"; };
 		95E750892A3A503D001CE8EA /* punkproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punkproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,7 +219,7 @@
 		95706FA52A3B3559007FC87E /* BeerService */ = {
 			isa = PBXGroup;
 			children = (
-				95706FA32A3B354F007FC87E /* BeerProvider.swift */,
+				95573D132A4214F500DFB244 /* getSingleBeerRequest.swift */,
 				95706FA62A3B356B007FC87E /* BeerService.swift */,
 			);
 			path = BeerService;
@@ -392,6 +392,7 @@
 				95706FBA2A3BCFB1007FC87E /* SelectServerService.swift in Sources */,
 				95706F8D2A3A5D80007FC87E /* Ingredients.swift in Sources */,
 				95706F872A3A5C7E007FC87E /* MashTemp.swift in Sources */,
+				95573D142A4214F500DFB244 /* getSingleBeerRequest.swift in Sources */,
 				95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */,
 				95573D022A41DA7900DFB244 /* Logger.swift in Sources */,
 				95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */,
@@ -409,7 +410,6 @@
 				95573D092A41E3D900DFB244 /* LogCompatible.swift in Sources */,
 				95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */,
 				95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */,
-				95706FA42A3B354F007FC87E /* BeerProvider.swift in Sources */,
 				95706F8B2A3A5D14007FC87E /* Hop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

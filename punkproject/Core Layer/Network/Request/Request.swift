@@ -14,15 +14,18 @@ protocol Request {
     var apiVersion: String { get }
     var httpMethod: HTTPMethod { get }
     var queryParams: [String: String]? { get }
-    var body: Any? { get }
-    var encoder: BodyDecoder? { get }
-    var headers: [String: String]? { get }
+    var headers: [String: String] { get }
 }
 
 extension Request {
 
-    var params: [String: Any] {
-        [:]
+    var baseURL: String {
+        let selectServerService = SelectServerServiceImpl()
+        return selectServerService.getServerHost()
+    }
+
+    var queryParams: [String: String]? {
+        nil
     }
 
     var urlParams: [String: String?] {
@@ -30,7 +33,7 @@ extension Request {
     }
 
     var headers: [String: String] {
-        [:]
+        ["Content-Type": "application/json"]
     }
 
     func createURLRequest() -> URLRequest {
@@ -42,9 +45,10 @@ extension Request {
         if !urlParams.isEmpty {
             components.queryItems = urlParams.map { URLQueryItem(name: $0, value: $1) }
         }
-
-        guard let url = components.url else { return URLRequest(url: URL(string: baseURL)!) }
-
+        
+        // MARK: - Question
+        let url: URL = components.url ?? URL(string: "")!
+        
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = httpMethod.rawValue
 
@@ -52,7 +56,7 @@ extension Request {
             urlRequest.allHTTPHeaderFields = headers
         }
 
-        if !params.isEmpty {
+        if let params = queryParams {
             urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: params)
         }
 

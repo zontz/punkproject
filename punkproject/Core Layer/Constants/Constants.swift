@@ -19,7 +19,4 @@ enum Routes {
     static let singleBeer = "/beers/1"
 }
 
-enum HostDomains: String, CaseIterable {
-    case prod = "test"
-    case dev = "api.punkapi.com"
-}
+

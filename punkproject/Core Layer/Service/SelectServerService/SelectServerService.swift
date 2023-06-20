@@ -22,3 +22,8 @@ struct SelectServerServiceImpl: SelectServerService {
         #endif
     }
 }
+
+enum HostDomains: String, CaseIterable {
+    case prod = "test"
+    case dev = "api.punkapi.com"
+}

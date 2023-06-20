@@ -1,10 +1,3 @@
-//
-//  NetworkManager.swift
-//  punkproject
-//
-//  Created by Владислав Шляховенко on 6/15/23.
-//
-
 import Foundation
 import Combine
 
@@ -26,7 +19,7 @@ final class NetworkManagerImpl: NetworkManager {
                 guard let httpResponse = result.response as? HTTPURLResponse else {
                     throw NetworkError.requestFailed
                 }
-                print(httpResponse.statusCode)
+                self.log("status code for \(String(request.httpMethod ?? "")) \(request) is \(httpResponse.statusCode)")
                 if (200..<300) ~= httpResponse.statusCode {
                     return result.data
                 } else {
@@ -41,5 +34,11 @@ final class NetworkManagerImpl: NetworkManager {
                 return NetworkError.normalError(error)
             })
             .eraseToAnyPublisher()
+    }
+}
+
+extension NetworkManagerImpl: LogCompatible {
+    var logger: Logger {
+        Logger(prefix: "[NetworkManager]")
     }
 }

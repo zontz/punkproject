@@ -9,6 +9,6 @@ import Foundation
 
 // MARK: - MashTemp
 struct MashTemp: Codable {
-    let temp: BoilVolume
+    let temp: BoilVolumeAPI
     let duration: Int?
 }

@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Hop
 struct Hop: Codable {
     let name: String
-    let amount: BoilVolume
+    let amount: BoilVolumeAPI
     let add: Add
     let attribute: Attribute
 }

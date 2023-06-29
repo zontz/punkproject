@@ -1,5 +1,7 @@
 import Foundation
 import Combine
+import CoreData
+import Swinject
 
 protocol NetworkManager: AnyObject {
     func publisher<T>(_ request: URLRequest, decodingType: T.Type) -> AnyPublisher<T, NetworkError> where T: Decodable
@@ -41,4 +43,26 @@ extension NetworkManagerImpl: LogCompatible {
     var logger: Logger {
         Logger(prefix: "[NetworkManager]")
     }
+}
+
+protocol Logic {
+    func hi()
+}
+class SimpleLogic: Logic {
+    func hi() {
+        print("s")
+    }
+}
+
+class CryptoLogic: Logic {
+    func hi() {
+        print("b")
+    }
+}
+
+
+final class DefaultDIManager {
+    let container = Container()
+
+//    func makeCryptoLogic
 }

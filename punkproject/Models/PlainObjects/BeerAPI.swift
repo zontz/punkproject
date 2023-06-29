@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Beer: Codable {
+struct BeerAPI: Codable {
     let id: Int
     let name, tagline, firstBrewed, description: String
     let imageURL: String
@@ -18,7 +18,7 @@ struct Beer: Codable {
     let ebc: Int?
     let srm, ph: Double?
     let attenuationLevel: Double
-    let volume, boilVolume: BoilVolume
+    let volume, boilVolume: BoilVolumeAPI
     let method: Method
     let ingredients: Ingredients
     let foodPairing: [String]

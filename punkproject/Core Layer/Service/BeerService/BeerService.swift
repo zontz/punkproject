@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol BeerService: AnyObject {
-    func getAllBeers() -> AnyPublisher<[Beer], NetworkError>
+    func getAllBeers() -> AnyPublisher<[BeerAPI], NetworkError>
 }
 
 final class BeerServiceImpl: BeerService {
@@ -19,8 +19,8 @@ final class BeerServiceImpl: BeerService {
         self.networkManager = networkManager
     }
 
-    func getAllBeers() -> AnyPublisher<[Beer], NetworkError> {
+    func getAllBeers() -> AnyPublisher<[BeerAPI], NetworkError> {
         let request = getSingleBeerRequest().createURLRequest()
-        return networkManager.publisher(request, decodingType: [Beer].self)
+        return networkManager.publisher(request, decodingType: [BeerAPI].self)
     }
 }

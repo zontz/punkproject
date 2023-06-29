@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  punkproject
+
+  Created by Владислав Шляховенко on 6/27/23.
+  
+*/
+
+"Error.wrongData" = "Неправильные данные";

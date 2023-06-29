@@ -7,7 +7,7 @@
 
 import Foundation
 import CocoaLumberjack
-
+// MARK: - Initilizator 
 final class CocoaLumberjackBuilder: Builder {
     func build() throws {
         DDLog.add(DDOSLogger.sharedInstance)

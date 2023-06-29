@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9511101D2A4A3D9A0036359C /* BeerManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9511101C2A4A3D9A0036359C /* BeerManagedObject.swift */; };
+		951110202A4AC7430036359C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 951110222A4AC7430036359C /* Localizable.strings */; };
+		951110282A4ACC1E0036359C /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9511102A2A4ACC1E0036359C /* Localizable.stringsdict */; };
+		952A4C462A4B15EE001A63F7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A4C452A4B15EE001A63F7 /* Localization.swift */; };
+		952A4C492A4B1C58001A63F7 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A4C482A4B1C58001A63F7 /* String+Localization.swift */; };
 		95573CFB2A41D81500DFB244 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFA2A41D81500DFB244 /* CocoaLumberjack */; };
 		95573CFD2A41D81500DFB244 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFC2A41D81500DFB244 /* CocoaLumberjackSwift */; };
 		95573CFF2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend in Frameworks */ = {isa = PBXBuildFile; productRef = 95573CFE2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend */; };
@@ -18,8 +23,9 @@
 		95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D0E2A41F96700DFB244 /* BuilderImpl.swift */; };
 		95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */; };
 		95573D142A4214F500DFB244 /* getSingleBeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95573D132A4214F500DFB244 /* getSingleBeerRequest.swift */; };
+		9557C73F2A4D67590054AAEF /* BoilVolumeManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9557C73E2A4D67590054AAEF /* BoilVolumeManagedObject.swift */; };
 		95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95706F7B2A3A5740007FC87E /* SnapKit */; };
-		95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F7E2A3A5BAD007FC87E /* Beer.swift */; };
+		95706F7F2A3A5BAD007FC87E /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F7E2A3A5BAD007FC87E /* BeerAPI.swift */; };
 		95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F802A3A5BE6007FC87E /* BoilVolume.swift */; };
 		95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F822A3A5C54007FC87E /* Fermentation.swift */; };
 		95706F852A3A5C6B007FC87E /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706F842A3A5C6B007FC87E /* Method.swift */; };
@@ -34,6 +40,10 @@
 		95706FA12A3B2BC3007FC87E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA02A3B2BC3007FC87E /* NetworkManager.swift */; };
 		95706FA72A3B356B007FC87E /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FA62A3B356B007FC87E /* BeerService.swift */; };
 		95706FBA2A3BCFB1007FC87E /* SelectServerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95706FB92A3BCFB1007FC87E /* SelectServerService.swift */; };
+		9577F1E72A4C56DC009AD9FA /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9577F1E62A4C56DC009AD9FA /* Swinject */; };
+		95890B832A486EBF00A2D87E /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95890B822A486EBF00A2D87E /* CoreDataStorage.swift */; };
+		95BA07562A49DADC0059A20B /* CoreDataCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA07552A49DADC0059A20B /* CoreDataCRUD.swift */; };
+		95BA07582A49F4D30059A20B /* PlainObjectCoreDataTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA07572A49F4D30059A20B /* PlainObjectCoreDataTransformable.swift */; };
 		95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7508C2A3A503D001CE8EA /* AppDelegate.swift */; };
 		95E750912A3A503D001CE8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E750902A3A503D001CE8EA /* ViewController.swift */; };
 		95E750942A3A503D001CE8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E750922A3A503D001CE8EA /* Main.storyboard */; };
@@ -43,6 +53,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9511101C2A4A3D9A0036359C /* BeerManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManagedObject.swift; sourceTree = "<group>"; };
+		951110212A4AC7430036359C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		951110232A4AC78C0036359C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		951110242A4AC78C0036359C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		951110252A4AC78C0036359C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		951110292A4ACC1E0036359C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		9511102B2A4ACC210036359C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		952A4C452A4B15EE001A63F7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		952A4C482A4B1C58001A63F7 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		95573D012A41DA7900DFB244 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		95573D032A41E29500DFB244 /* DDLogFlag+emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DDLogFlag+emoji.swift"; sourceTree = "<group>"; };
 		95573D062A41E37100DFB244 /* LogStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStringConvertible.swift; sourceTree = "<group>"; };
@@ -51,7 +70,8 @@
 		95573D0E2A41F96700DFB244 /* BuilderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderImpl.swift; sourceTree = "<group>"; };
 		95573D112A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaLumberjackBuilder.swift; sourceTree = "<group>"; };
 		95573D132A4214F500DFB244 /* getSingleBeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getSingleBeerRequest.swift; sourceTree = "<group>"; };
-		95706F7E2A3A5BAD007FC87E /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		9557C73E2A4D67590054AAEF /* BoilVolumeManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolumeManagedObject.swift; sourceTree = "<group>"; };
+		95706F7E2A3A5BAD007FC87E /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
 		95706F802A3A5BE6007FC87E /* BoilVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilVolume.swift; sourceTree = "<group>"; };
 		95706F822A3A5C54007FC87E /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
 		95706F842A3A5C6B007FC87E /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
@@ -66,6 +86,9 @@
 		95706FA02A3B2BC3007FC87E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		95706FA62A3B356B007FC87E /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
 		95706FB92A3BCFB1007FC87E /* SelectServerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectServerService.swift; sourceTree = "<group>"; };
+		95890B822A486EBF00A2D87E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		95BA07552A49DADC0059A20B /* CoreDataCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCRUD.swift; sourceTree = "<group>"; };
+		95BA07572A49F4D30059A20B /* PlainObjectCoreDataTransformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainObjectCoreDataTransformable.swift; sourceTree = "<group>"; };
 		95E750892A3A503D001CE8EA /* punkproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = punkproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7508C2A3A503D001CE8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E750902A3A503D001CE8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95573CFB2A41D81500DFB244 /* CocoaLumberjack in Frameworks */,
+				9577F1E72A4C56DC009AD9FA /* Swinject in Frameworks */,
 				95706F7C2A3A5740007FC87E /* SnapKit in Frameworks */,
 				95573CFF2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend in Frameworks */,
 				95573CFD2A41D81500DFB244 /* CocoaLumberjackSwift in Frameworks */,
@@ -91,6 +115,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951110172A4A3CB60036359C /* PlainObjects */ = {
+			isa = PBXGroup;
+			children = (
+				95706F7E2A3A5BAD007FC87E /* BeerAPI.swift */,
+				95706F802A3A5BE6007FC87E /* BoilVolume.swift */,
+				95706F822A3A5C54007FC87E /* Fermentation.swift */,
+				95706F842A3A5C6B007FC87E /* Method.swift */,
+				95706F862A3A5C7E007FC87E /* MashTemp.swift */,
+				95706F882A3A5C93007FC87E /* Malt.swift */,
+				95706F8A2A3A5D13007FC87E /* Hop.swift */,
+				95706F8C2A3A5D80007FC87E /* Ingredients.swift */,
+			);
+			path = PlainObjects;
+			sourceTree = "<group>";
+		};
+		951110182A4A3CC30036359C /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				9511101A2A4A3D020036359C /* Common */,
+				9511101C2A4A3D9A0036359C /* BeerManagedObject.swift */,
+				9557C73E2A4D67590054AAEF /* BoilVolumeManagedObject.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		951110192A4A3CCC0036359C /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				95E750952A3A503D001CE8EA /* punkproject.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		9511101A2A4A3D020036359C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				95BA07572A49F4D30059A20B /* PlainObjectCoreDataTransformable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		952A4C472A4B1BF5001A63F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				952A4C452A4B15EE001A63F7 /* Localization.swift */,
+				952A4C482A4B1C58001A63F7 /* String+Localization.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		95573D002A41DA5C00DFB244 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,14 +212,9 @@
 		95706F7D2A3A5B9D007FC87E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				95706F7E2A3A5BAD007FC87E /* Beer.swift */,
-				95706F802A3A5BE6007FC87E /* BoilVolume.swift */,
-				95706F822A3A5C54007FC87E /* Fermentation.swift */,
-				95706F842A3A5C6B007FC87E /* Method.swift */,
-				95706F862A3A5C7E007FC87E /* MashTemp.swift */,
-				95706F882A3A5C93007FC87E /* Malt.swift */,
-				95706F8A2A3A5D13007FC87E /* Hop.swift */,
-				95706F8C2A3A5D80007FC87E /* Ingredients.swift */,
+				951110192A4A3CCC0036359C /* CoreDataModel */,
+				951110182A4A3CC30036359C /* ManagedObjects */,
+				951110172A4A3CB60036359C /* PlainObjects */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +288,15 @@
 			path = SelectServerService;
 			sourceTree = "<group>";
 		};
+		95890B812A486EB300A2D87E /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				95890B822A486EBF00A2D87E /* CoreDataStorage.swift */,
+				95BA07552A49DADC0059A20B /* CoreDataCRUD.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
 		95E750802A3A503D001CE8EA = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +321,6 @@
 				95E750A52A3A51AE001CE8EA /* Core Layer */,
 				95E750A62A3A51B7001CE8EA /* Presentation Layer */,
 				95E750A32A3A517A001CE8EA /* Resources */,
-				95E750952A3A503D001CE8EA /* punkproject.xcdatamodeld */,
 			);
 			path = punkproject;
 			sourceTree = "<group>";
@@ -251,6 +328,8 @@
 		95E750A32A3A517A001CE8EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9511102A2A4ACC1E0036359C /* Localizable.stringsdict */,
+				951110222A4AC7430036359C /* Localizable.strings */,
 				95E750982A3A503E001CE8EA /* Assets.xcassets */,
 				95E750922A3A503D001CE8EA /* Main.storyboard */,
 				95E7509A2A3A503E001CE8EA /* LaunchScreen.storyboard */,
@@ -272,6 +351,7 @@
 		95E750A52A3A51AE001CE8EA /* Core Layer */ = {
 			isa = PBXGroup;
 			children = (
+				95890B812A486EB300A2D87E /* DataStorage */,
 				95573D002A41DA5C00DFB244 /* Logger */,
 				95706F902A3A7318007FC87E /* Constants */,
 				95706FA22A3B353F007FC87E /* Service */,
@@ -283,6 +363,7 @@
 		95E750A62A3A51B7001CE8EA /* Presentation Layer */ = {
 			isa = PBXGroup;
 			children = (
+				952A4C472A4B1BF5001A63F7 /* Extensions */,
 				95E750902A3A503D001CE8EA /* ViewController.swift */,
 			);
 			path = "Presentation Layer";
@@ -309,6 +390,7 @@
 				95573CFA2A41D81500DFB244 /* CocoaLumberjack */,
 				95573CFC2A41D81500DFB244 /* CocoaLumberjackSwift */,
 				95573CFE2A41D81500DFB244 /* CocoaLumberjackSwiftLogBackend */,
+				9577F1E62A4C56DC009AD9FA /* Swinject */,
 			);
 			productName = punkproject;
 			productReference = 95E750892A3A503D001CE8EA /* punkproject.app */;
@@ -336,11 +418,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 95E750802A3A503D001CE8EA;
 			packageReferences = (
 				95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				95573CF92A41D81500DFB244 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				9577F1E52A4C56DC009AD9FA /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 95E7508A2A3A503D001CE8EA /* Products */;
 			projectDirPath = "";
@@ -357,7 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E7509C2A3A503E001CE8EA /* LaunchScreen.storyboard in Resources */,
+				951110202A4AC7430036359C /* Localizable.strings in Resources */,
 				95E750992A3A503E001CE8EA /* Assets.xcassets in Resources */,
+				951110282A4ACC1E0036359C /* Localizable.stringsdict in Resources */,
 				95E750942A3A503D001CE8EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,21 +457,27 @@
 			files = (
 				95706FA12A3B2BC3007FC87E /* NetworkManager.swift in Sources */,
 				95573D072A41E37100DFB244 /* LogStringConvertible.swift in Sources */,
+				952A4C462A4B15EE001A63F7 /* Localization.swift in Sources */,
 				95E750912A3A503D001CE8EA /* ViewController.swift in Sources */,
 				95E750972A3A503D001CE8EA /* punkproject.xcdatamodeld in Sources */,
-				95706F7F2A3A5BAD007FC87E /* Beer.swift in Sources */,
+				9511101D2A4A3D9A0036359C /* BeerManagedObject.swift in Sources */,
+				95706F7F2A3A5BAD007FC87E /* BeerAPI.swift in Sources */,
 				95706FBA2A3BCFB1007FC87E /* SelectServerService.swift in Sources */,
 				95706F8D2A3A5D80007FC87E /* Ingredients.swift in Sources */,
 				95706F872A3A5C7E007FC87E /* MashTemp.swift in Sources */,
+				95BA07582A49F4D30059A20B /* PlainObjectCoreDataTransformable.swift in Sources */,
 				95573D142A4214F500DFB244 /* getSingleBeerRequest.swift in Sources */,
 				95E7508D2A3A503D001CE8EA /* AppDelegate.swift in Sources */,
 				95573D022A41DA7900DFB244 /* Logger.swift in Sources */,
+				9557C73F2A4D67590054AAEF /* BoilVolumeManagedObject.swift in Sources */,
 				95706F832A3A5C54007FC87E /* Fermentation.swift in Sources */,
+				95890B832A486EBF00A2D87E /* CoreDataStorage.swift in Sources */,
 				95706F852A3A5C6B007FC87E /* Method.swift in Sources */,
 				95706F962A3A7797007FC87E /* HTTPMethod.swift in Sources */,
 				95706FA72A3B356B007FC87E /* BeerService.swift in Sources */,
 				95706F922A3A7327007FC87E /* Constants.swift in Sources */,
 				95706F892A3A5C93007FC87E /* Malt.swift in Sources */,
+				95BA07562A49DADC0059A20B /* CoreDataCRUD.swift in Sources */,
 				95706F942A3A773D007FC87E /* Request.swift in Sources */,
 				95573D042A41E29500DFB244 /* DDLogFlag+emoji.swift in Sources */,
 				95706F812A3A5BE6007FC87E /* BoilVolume.swift in Sources */,
@@ -395,16 +487,36 @@
 				95573D0F2A41F96700DFB244 /* BuilderImpl.swift in Sources */,
 				95573D122A41F9CE00DFB244 /* CocoaLumberjackBuilder.swift in Sources */,
 				95706F8B2A3A5D14007FC87E /* Hop.swift in Sources */,
+				952A4C492A4B1C58001A63F7 /* String+Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		951110222A4AC7430036359C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951110212A4AC7430036359C /* en */,
+				951110252A4AC78C0036359C /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9511102A2A4ACC1E0036359C /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				951110292A4ACC1E0036359C /* ru */,
+				9511102B2A4ACC210036359C /* en */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		95E750922A3A503D001CE8EA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				95E750932A3A503D001CE8EA /* Base */,
+				951110232A4AC78C0036359C /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -413,6 +525,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				95E7509B2A3A503E001CE8EA /* Base */,
+				951110242A4AC78C0036359C /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -424,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -512,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -600,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -688,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -771,6 +888,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -854,6 +972,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -937,6 +1056,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -997,6 +1117,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1155,6 +1276,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		9577F1E52A4C56DC009AD9FA /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1177,6 +1306,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 95706F7A2A3A5740007FC87E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		9577F1E62A4C56DC009AD9FA /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9577F1E52A4C56DC009AD9FA /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 

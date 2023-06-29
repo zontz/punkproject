@@ -45,10 +45,10 @@ extension Request {
         if !urlParams.isEmpty {
             components.queryItems = urlParams.map { URLQueryItem(name: $0, value: $1) }
         }
-        
+
         // MARK: - Question
         let url: URL = components.url ?? URL(string: "")!
-        
+
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = httpMethod.rawValue
 

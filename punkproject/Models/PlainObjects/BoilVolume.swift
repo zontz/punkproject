@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - BoilVolume
-struct BoilVolume: Codable {
+struct BoilVolumeAPI: Codable {
     let value: Double
     let unit: Unit
 }

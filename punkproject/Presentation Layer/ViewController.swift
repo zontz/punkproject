@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 final class ViewController: UIViewController {
-    private var beers: [Beer] = []
+    private var beers: [BeerAPI] = []
     private var cancellables = Set<AnyCancellable>()
     private let beerService = BeerServiceImpl(networkManager: NetworkManagerImpl())
 

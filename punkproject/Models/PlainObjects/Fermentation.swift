@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - Fermentation
 struct Fermentation: Codable {
-    let temp: BoilVolume
+    let temp: BoilVolumeAPI
 }

@@ -10,5 +10,5 @@ import Foundation
 // MARK: - Malt
 struct Malt: Codable {
     let name: String
-    let amount: BoilVolume
+    let amount: BoilVolumeAPI
 }
